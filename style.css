@@ -4,9 +4,10 @@
 }
 *{
     margin: 0;
-    font-family: "Exo 2", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .nav{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -14,7 +15,8 @@
     padding: 1%;
     background-color: var(--dark-primary);
     color: var(--primary);
-    box-shadow: 1px 0px 20px grey;
+    /* box-shadow: 1px 0px 20px grey; */
+    position: fixed;
 }
 div .logo{
     cursor: pointer;
@@ -46,15 +48,16 @@ a span{
 }
 div button{
     font-weight: 900;
-    color: white;
+    color: var(--primary);
     border: 1px solid #439afd;
     background-color: var(--dark-primary);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 12px;
     cursor: pointer;
 }
 div button:hover{
-    color: var(--primary);
+    color: white;
+    background-color: var(--primary);
     border: 1px solid var(--primary);
     box-shadow: 1px 1px 5px #439afd;
 }
@@ -84,19 +87,26 @@ p{
     margin-top: 10px;
     color: #bababa;
 }
-.hire__me{
+div .btn.btn_primary{
+    background-color: var(--primary);
+    letter-spacing: 1px;
     margin: 10px 0px;
     padding: 15px 50px;
+    color: white;
+    border-radius: 5px;
+}
+div .btn.btn_primary:hover{
+    background-color: #316FF6;
+    box-shadow: 10px 10px 30px var(--primary);
+
 }
 div img{
     padding: 10px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 .social__icons li a{
     margin: 10px 15px 10px 0px;
-    /* margin-top: 10px;
-    margin-right: 15px; */
     color: white;
     list-style: none;
     display: flex;
@@ -116,10 +126,41 @@ ul.social__icons {
 }
 .social__icons li a > i.fa-github:hover{
     color:#171515 ;
-    }
-    .social__icons li a > i.fa-linkedin:hover{
-        color:#0077b5 ;
-        }
-        .social__icons li a > i.fa-envelope:hover{
-            color:whitesmoke ;
-            }
+}
+.social__icons li a > i.fa-linkedin:hover{
+    color:#0077b5 ;
+}
+.social__icons li a > i.fa-envelope:hover{
+    color:whitesmoke ;
+}
+
+section{
+    background-color: var(--dark-primary);
+    width: 100%;
+    height: 98vh;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#aboutimg{
+    width: 310px;
+    height: 360px;
+    border-radius: 100%;
+    padding: 1px;
+    background-color: var(--dark-primary);
+    border: 5px solid var(--primary);
+    box-shadow: 1px -1px 40px var(--primary);
+}
+.dev2 p{
+    width: 450px;
+    color: #bababa;
+    text-align: justify;
+}
+.btn.btn_primary.summary{
+    display: flex;
+    justify-content: center;
+}
+.btn.btn_primary.summary:hover{
+    box-shadow: 0px 0px 0px var(--dark-primary);
+}
