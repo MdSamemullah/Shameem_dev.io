@@ -171,7 +171,7 @@ ul.social__icons {
 
 
 .work_section{
-    background-color: #171414;
+    background-color: #1c1b1c;
     text-align: center;
     padding: 25px;
     color: white;
@@ -190,7 +190,7 @@ ul.social__icons {
     flex-basis: 40%;
 }
 .work_section_box:hover{
-    background-color: #303030;
+    background-color: #202022;
 }
 
 .work_section h4,.contact_me h4{
