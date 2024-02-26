@@ -1,6 +1,7 @@
 :root{
     --primary:#439afd;
     --dark-primary:#202124;
+    --dark-secondary:#2b2b2b;
 }
 *{
     margin: 0;
@@ -134,8 +135,8 @@ ul.social__icons {
     color:whitesmoke ;
 }
 
-section{
-    background-color: var(--dark-primary);
+.about_section{
+    background-color: var(--dark-secondary);
     width: 100%;
     height: 98vh;
     color: white;
@@ -163,4 +164,70 @@ section{
 }
 .btn.btn_primary.summary:hover{
     box-shadow: 0px 0px 0px var(--dark-primary);
+}
+
+/* work section  */
+
+
+
+.work_section{
+    background-color: #171414;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    height: 90vh;
+
+}
+.work_section_box
+{
+    background-color: var(--dark-secondary);
+    margin: 10px;
+    width: 220px;
+    height: 80px;
+    padding: 30px;
+    text-align: left;
+    border-radius: 15px;
+    flex-basis: 40%;
+}
+.work_section_box:hover{
+    background-color: #303030;
+}
+
+.work_section h4,.contact_me h4{
+    font-size: 30px;
+}
+
+.work_section_box p{
+    color: #bababa;
+}
+.work_section_box a{
+    text-decoration: none;
+    color: var(--primary);
+    /* text-align: center; */
+    margin-top: 15px;
+}
+.work_section_box a:visited{
+    color: var(--primary);
+}
+.work_items{
+    margin: 20px;
+    justify-content: space-evenly;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* sub-title */
+.work_section h4 span, .contact_me h4 span{
+    color: var(--primary);
+}
+
+
+
+/* contact me section  */
+
+.contact_me{
+    background-color: var(--dark-primary);
+    color: white;
+    text-align: center;
 }
