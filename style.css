@@ -281,16 +281,127 @@ footer a{
     color: var(--primary);
 }
 
+
+@media (max-width:650px){
+    body{
+        width: 100%;
+    }
+    header{
+        gap: 15%;
+        display: flex;
+        height: 30vh;
+    }
+    header >* {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu{
+        display: none;
+    }
+    .main{
+        /* margin-top: 70px; */
+        height: 90vh;
+        flex-direction: inherit;
+        gap:-20%;
+    }
+    .menu img{
+        margin-top: 20px;
+        opacity: 2;
+    }
+    section.about_section{
+        flex-direction: column;
+        height: 150vh;
+    }
+    .work_section{
+        flex-direction: column;
+        height: 130vh;
+    }
+    .work_section_box{
+        width: auto;
+        flex-basis: 30%;
+        height:auto;
+    }
+    div.contact_me{
+        flex-direction: column;
+        height: 65vh;
+    }
+    div.contact_me form textarea{
+        width: 250px;
+    }
+    div.contact_me form input{
+        width: 250px;
+    }
+
+} 
+/* prefectly done width - 650px*/
+
+
 @media (max-width:450px){
     body{
         width: 100%;
     }
     header{
-        /* position: fixed; */
-        flex-direction: column;
-        margin-top: 100px;
+        position: fixed;
         gap: 10%;
-        
+        height: 20vh;
+    }
+    header >* {
+        /* margin-bottom: 10px; */
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu{
+        display: none;
+    }
+    .main{
+        /* margin-top: 50px; */
+        height: 195vh;
+        gap: 0%;
+        flex-direction: column;
+    }
+    .about_section{
+        flex-direction: column;
+        height: auto;
+    }
+    #aboutimg{
+        width: 350px;
+    }
+    #div2_p{
+        width: 380px;
+    }
+    .work_section{
+        flex-direction: column;
+        height: auto;
+    }
+    .work_section_box{
+        width: auto;
+        flex-basis: 70%;
+        height:auto;
+    }
+    div.contact_me{
+        flex-direction: column;
+        height: 65vh;
+    }
+    div.contact_me form textarea{
+        width: 250px;
+    }
+    div.contact_me form input{
+        width: 250px;
+    }
+
+}
+/* successfully done width - 450 */
+
+
+
+@media (max-width:424px){
+    body{
+        width: 100%;
+    }
+    header{
+        position: fixed;
+        margin-top: -50px;
     }
     header >* {
         margin-bottom: 10px;
@@ -310,16 +421,16 @@ footer a{
     }
     .work_section{
         flex-direction: column;
-        height: 130vh;
+        height: auto;
     }
     .work_section_box{
         width: auto;
-        flex-basis: 50%;
+        flex-basis: 95%;
         height:auto;
     }
     div.contact_me{
         flex-direction: column;
-        height: 40vh;
+        height: 70vh;
     }
     div.contact_me form textarea{
         width: 250px;
