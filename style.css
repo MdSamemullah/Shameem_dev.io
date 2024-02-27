@@ -402,6 +402,7 @@ footer a{
     header{
         position: fixed;
         margin-top: -50px;
+        height: 10vh;
     }
     header >* {
         margin-bottom: 10px;
@@ -415,9 +416,19 @@ footer a{
         margin-top: 50px;
         flex-direction: column;
     }
-    .about_section{
+    #Home{
+        height: 130vh;
+    }
+    #Home .section1{
+        height:30vh ;
+    }
+    #about_section{
         flex-direction: column;
-
+        height: 100vh;
+    }
+    #aboutimg{
+        width: 290px;
+        height: 45vh;
     }
     .work_section{
         flex-direction: column;
@@ -430,7 +441,7 @@ footer a{
     }
     div.contact_me{
         flex-direction: column;
-        height: 70vh;
+        height: 50vh;
     }
     div.contact_me form textarea{
         width: 250px;
