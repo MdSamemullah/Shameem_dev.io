@@ -306,18 +306,15 @@ footer a{
         display: none;
     } */
     .main{
-        /* margin-top: 70px; */
-        height: 155vh;
-        flex-direction: inherit;
-        gap:-20%;
+        height: 125vh;
+        /* gap:10%; */
     }
     .menu img{
         margin-top: 20px;
         opacity: 2;
     }
     section.about_section{
-        /* flex-direction: column; */
-        height: 150vh;
+        height: 110vh;
     }
     .work_section{
         flex-direction: column;
@@ -330,14 +327,9 @@ footer a{
     }
     div.contact_me{
         flex-direction: column;
-        height: 120vh;
+        height: 80vh;
     }
-    /* div.contact_me form textarea{
-        width: 250px;
-    }
-    div.contact_me form input{
-        width: 250px;
-    } */
+    
 
 }
 
