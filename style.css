@@ -241,7 +241,7 @@ div.contact_me{
     background-color: #202124;
     color: white;
     text-align: center;
-    height: 45vh;
+    height: 55vh;
 }
 div.contact_me h4{
     padding: 25px 0px;
@@ -284,6 +284,58 @@ footer a{
     text-decoration: none;
     color: var(--primary);
 }
+
+@media (max-width:990px){
+    body{
+        width: 100%;
+    }
+    header{
+        display: flex;
+        justify-content: space-around;
+        height: 15vh;
+    }
+    #nav{
+        gap: 0%;
+    }
+    header >* {
+        /* margin-bottom: 10px; */
+        display: flex;
+        justify-content: space-around;
+        gap: 0%;
+    }
+    /* .menu{
+        display: none;
+    } */
+    .main{
+        height: 125vh;
+        /* gap:10%; */
+    }
+    .menu img{
+        margin-top: 20px;
+    }
+    section.about_section{
+        height: 110vh;
+    }
+    .work_section{
+        flex-direction: column;
+        height: auto;
+    }
+    .work_section_box{
+        width: auto;
+        flex-basis: 40%;
+        height:auto;
+    }
+    div.contact_me{
+        flex-direction: column;
+        height: 80vh;
+    }
+    
+
+}
+
+
+
+
 /* mobile vertical responsive */
 @media (max-width:899px){
     body{
@@ -327,7 +379,7 @@ footer a{
     }
     div.contact_me{
         flex-direction: column;
-        height: 80vh;
+        height: 60vh;
     }
     
 
@@ -340,7 +392,7 @@ footer a{
     header{
         gap: 15%;
         display: flex;
-        height: 30vh;
+        height: 15vh;
     }
     header >* {
         margin-bottom: 10px;
@@ -352,9 +404,12 @@ footer a{
     }
     .main{
         /* margin-top: 70px; */
-        height: 90vh;
-        flex-direction: inherit;
-        gap:-20%;
+        height: 160vh;
+        flex-direction: column;
+        gap:0%;
+    }
+    .section1{
+        height: 40vh;
     }
     .menu img{
         margin-top: 20px;
@@ -362,26 +417,26 @@ footer a{
     }
     section.about_section{
         flex-direction: column;
-        height: 150vh;
+        height: 130vh;
     }
     .work_section{
         flex-direction: column;
-        height: 130vh;
+        height: auto;
     }
     .work_section_box{
         width: auto;
         flex-basis: 30%;
-        height:auto;
+        /* height:auto; */
     }
     div.contact_me{
         flex-direction: column;
         height: 65vh;
     }
     div.contact_me form textarea{
-        width: 250px;
+        width: 450px;
     }
     div.contact_me form input{
-        width: 250px;
+        width: 450px;
     }
 
 } 
@@ -434,7 +489,7 @@ footer a{
     }
     .work_section_box{
         width: auto;
-        flex-basis: 70%;
+        flex-basis: 80%;
         height:auto;
     }
     div.contact_me{
@@ -442,10 +497,10 @@ footer a{
         height: 45vh;
     }
     div.contact_me form textarea{
-        width: 250px;
+        width: 350px;
     }
     div.contact_me form input{
-        width: 250px;
+        width: 350px;
     }
 
 }
@@ -457,8 +512,8 @@ footer a{
         width: 100%;
     }
     header{
-        position: fixed;
-        margin-top: -50px;
+        /* position: fixed; */
+        /* margin-top: -50px; */
         height: 10vh;
     }
     header >* {
@@ -470,14 +525,14 @@ footer a{
         display: none;
     }
     .main{
-        margin-top: 50px;
+        /* margin-top: 50px; */
         flex-direction: column;
     }
     #Home{
-        height: 130vh;
+        height: 120vh;
     }
     #Home .section1{
-        height:30vh ;
+        height:38vh ;
     }
     #about_section{
         flex-direction: column;
@@ -501,10 +556,10 @@ footer a{
         height: 50vh;
     }
     div.contact_me form textarea{
-        width: 250px;
+        width: 300px;
     }
     div.contact_me form input{
-        width: 250px;
+        width: 300px;
     }
 
 }
